@@ -1,0 +1,67 @@
+.contact-us{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+.title{
+    margin-left: 30px;
+}
+.contact-icons{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+.msg-input{
+    width: 485px;
+    height: 80px;
+    outline: none;
+    border: solid 1px #EF9C66;
+    padding-left: 20px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+}
+
+.name-email{
+    margin-top: 20px;
+    outline: none;
+}
+.name-ipt{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: solid 1px #EF9C66;
+    border-radius: 8px;
+}
+.email-ipt{
+    width: 254px;
+    height: 30px;
+    margin-left: 40px;
+    outline: none;
+    border: solid 1px #EF9C66;
+    border-radius: 8px;
+}
+.ipt-subject{
+    margin-top: 20px;
+    width: 500px;
+    height: 30px;
+    outline: none;
+    border: solid 1px #EF9C66;
+    border-radius: 8px;
+}
+.send{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 130px;
+    height: 30px;
+    background-color: transparent;
+    border: solid 1px #EF9C66;
+    color: #EF9C66;
+    letter-spacing: 3px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+.contact-icons{
+    color: #EF9C66;
+    font-size: 20px;
+    font-weight: bold;
+}

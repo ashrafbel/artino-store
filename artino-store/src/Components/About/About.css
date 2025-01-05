@@ -1,0 +1,76 @@
+.aboutus{
+    margin-top: -40px;
+}
+.aboutus h1 {
+    margin-left: 30px;
+}
+.txt-img{
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.txt-img img {
+    max-width: 80%;
+    height: 380px;
+    border-radius: 20px;
+    margin-top: -30px;
+    margin-left: 120px;
+}
+.txt-img  p {
+    color: #EF9C66;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.elements{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.delivery{
+    background-color: transparent;
+    border: solid 1px aliceblue;
+    margin-left: 40px;
+    width: 140px;
+    height: 80px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #EF9C66;
+}
+.support{
+    background-color: transparent;
+    border: solid 1px aliceblue;
+    margin-left: 80px;
+    width: 140px;
+    height: 80px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #EF9C66;
+}
+.exchange{
+    background-color: transparent;
+    border: solid 1px aliceblue;
+    margin-left: 80px;width: 100px;
+    height: 80px;
+    width: 140px;
+    height: 80px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #EF9C66;
+}
+.dicon{
+    font-size: 34px;
+    margin-top: -10px;
+}
+.sprticon{
+    font-size: 34px;
+    margin-top: -10px;
+}
+.change{
+    font-size: 34px;
+    margin-top: -10px;
+}
+
+

@@ -1,0 +1,178 @@
+h1{
+    color: #EF9C66;
+    margin-left: 20px;
+}
+.img-desc{
+    display: flex;
+}
+.img-desc img {
+    max-width: 60%;
+    max-height: 40%;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.img-desc p {
+    margin-left: 40px;
+    margin-right: 20px;
+    color: #EF9C66;
+}
+.product-imgs{
+    display: flex;
+    margin-top: 35px;
+}
+.product-imgs img {
+    max-width: 30%;
+    padding-left: 30px;
+}
+.buttons {
+    
+    display: flex;
+
+}
+.buttons button {
+    width: 160px;
+    height: 30px;
+    background-color: transparent;
+    border: solid 1px #EF9C66;
+    border-radius: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.buttons a {
+    text-decoration: none;
+    color: #EF9C66;
+
+}
+.hr-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.hr-line {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 0 10px;
+}
+.hr-text{
+    color: #EF9C66;
+    white-space: nowrap;
+}
+.credit-card{
+    margin-top: 30px;
+    margin-left: 40px;
+    background-color: transparent;
+    border: solid 1px #ccc;
+    border-radius: 15px;
+    width: 380px;
+    height: 300px;
+    align-items: center;
+    padding-left: 20px;
+}
+.credit-card h2 {
+    font-size: 14px;
+    color: #EF9C66;
+}
+.card-name{
+    width: 260px;
+    height: 30px;
+    outline: none;
+    border: solid 1px #EF9C66;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+.credit-card h3 {
+    font-size: 14px;
+    color: #EF9C66;
+}
+.card-number{
+    width: 260px;
+    height: 30px;
+    outline: none;
+    border: solid 1px #EF9C66;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+.ex-ccv{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.ex-ccv input {
+    width: 114px;
+    height: 30px;
+    outline: none;
+    border: solid 1px #EF9C66;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+.ex-ccv .CCV{
+    margin-left: 20px;
+}
+.place-order{
+    width: 272px;
+    height: 30px;
+    outline: none;
+    border: solid 1px #EF9C66;
+    border-radius: 8px;
+    color: #EF9C66;
+    letter-spacing: 4px;
+    word-spacing: 2px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+.user-infos{
+    display: flex;
+}
+.delevery-infos{
+    background-color: transparent;
+    border: solid 1px #ccc;
+    border-radius: 15px;
+    width: 380px;
+    height: 300px;
+    align-items: center;
+    padding-left: 20px;
+    margin-top: 30px;
+    margin-left: 180px;
+}
+.delevery-infos h1 {
+    font-size: 18px;
+    color: #EF9C66;
+   padding-right: 20px;
+}
+
+.delevery-infos input {
+    
+    outline: none;
+    border: solid 1px #EF9C66;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+
+.name{
+    width: 200px;
+    height: 30px; 
+}
+.adress{
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+}
+.city-state{
+    margin-top: 20px;
+}
+.city-state input {
+    height: 30px;
+}
+.city-state .state {
+    margin-left: 10px;
+}
+.zip-country{
+    margin-top: 20px;
+}
+.zip-country input {
+    height: 30px;
+}
+.zip-country .country{
+    margin-left: 10px;
+}
