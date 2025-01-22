@@ -17,7 +17,7 @@ const AllProducts = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch('./allproducts.json')
+    fetch('http://localhost:8080/api/products')
       .then(response => response.json())
       .then(data => setProducts(data))
       .catch(error => console.error('Something is wrong', error));

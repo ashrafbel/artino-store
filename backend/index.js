@@ -17,7 +17,7 @@ app.get('/ping', (req, res) => {
 app.use(bodyParser.json());
 app.use(cors());
 app.use('/auth', AuthRouter)
-app.use('/products', ProductsRouter)
+app.use('/api', ProductsRouter)
 
 app.listen(PORT, () => {
     console.log(`Server is runnig on ${PORT}`)
