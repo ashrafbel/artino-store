@@ -4,7 +4,8 @@ import Header from "../Header/Header";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa";
-import Getstarted from "../Getstarted/Getstarted";
+// import Getstarted from "../Getstarted/Getstarted";
+// import Login from "../Login/Login";
 import { useNavigate } from "react-router-dom";
 const Home = () =>{
     const navigate = useNavigate();
@@ -13,6 +14,9 @@ const Home = () =>{
     };
     const handleViewoffers = () => {
         navigate("/viewoffers");
+    };
+    const handleLogin = () => {
+        navigate("/login");
     };
     return(
         <div className="header">
@@ -24,6 +28,7 @@ const Home = () =>{
                     <div className="buttons">
                         <button onClick={handleGetStarted}  className="start">Get Started</button>
                         <button onClick={handleViewoffers} className="offers">View Offers</button>
+                        <button onClick={handleLogin} className="offers">Login</button>
                     </div>
                     <div className="social-media">
                         <ul>

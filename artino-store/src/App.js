@@ -10,6 +10,7 @@ import Getstarted from './Components/Getstarted/Getstarted';
 import Viewoffers from './Components/Viewoffers/Viewoffers';
 import AllProducts from './Components/Allproducts/Allproducts';
 import Productpage from './Components/Productpage/Productpage';
+import Login from "./Components/Login/Login";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
             <Route path="/getstarted" element={<Getstarted />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/viewoffers" element={<Viewoffers />} />
             <Route path="/allproducts" element={<AllProducts />} />
             <Route path="/productpage/:id" element={<Productpage />}  />

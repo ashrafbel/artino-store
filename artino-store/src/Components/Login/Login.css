@@ -1,0 +1,75 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #365E32;
+}
+
+.get-started {
+    margin: 80px auto;
+    width: 400px;
+    height: auto;
+    background-color: transparent;
+    border: solid 1px aliceblue;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.get-started h1 {
+    color: #EF9C66;
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.get-started p {
+    color: #EF9C66;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.email-password {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.email, .password {
+    width: 100%;
+    height: 40px;
+    background-color: #EF9C66;
+    border: none;
+    border-radius: 12px;
+    padding-left: 15px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.signup {
+    width: 100%;
+    background-color: #EF9C66;
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+    margin-top: 20px;
+    color: #365E32;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.signup:hover {
+    background-color: #D88C4A;
+}
+
+.welcome-msg {
+    color: #EF9C66;
+    margin-bottom: 20px;
+    text-align: center;
+}

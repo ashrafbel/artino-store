@@ -1,23 +1,27 @@
 import { React, useState } from "react";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import './Getstarted.css';
 
 const Getstarted = () => {
-    const [firstName, setFirstName] = useState("");
+    const [fullName, setFulltName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [message, setMessage] = useState("");
+    const navigate = useNavigate();
+    
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // إرسال البيانات إلى الخادم (API Express)
+
         const response = await fetch("http://localhost:8080/auth/signup", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                name: firstName,
+                name: fullName,
                 email,
                 password,
             }),
@@ -26,6 +30,8 @@ const Getstarted = () => {
         const data = await response.json();
         if (response.status === 201) {
             setMessage("Registration successful! Welcome to Artino!");
+            navigate("/");
+
         } else {
             setMessage(data.message || "Registration failed. Please try again.");
         }
@@ -41,9 +47,9 @@ const Getstarted = () => {
                     <input
                         className="first-name"
                         type="text"
-                        placeholder="First name"
-                        value={firstName}
-                        onChange={(e) => setFirstName(e.target.value)}
+                        placeholder="FullName"
+                        value={fullName}
+                        onChange={(e) => setFulltName(e.target.value)}
                         required
                     />
                 </div>
@@ -66,6 +72,12 @@ const Getstarted = () => {
                     />
                 </div>
                 <button className="signup">Sign Up</button>
+                <p>
+                    Already have an account?{" "}
+                    <Link to="/login" className="login-link">
+                        Login here
+                    </Link>
+                </p>
             </form>
         </div>
     );
