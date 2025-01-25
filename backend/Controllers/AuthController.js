@@ -55,7 +55,7 @@ const login = async (req, res) => {
             });
         }
 
-        // إنشاء JWT
+        // create jwt
         const jwtToken = jwt.sign(
             { email: user.email, _id: user._id },
             process.env.JWT_SECRET,
@@ -65,12 +65,12 @@ const login = async (req, res) => {
         res.status(200).json({
             message: 'Login successfully',
             success: true,
-            jwtToken, // تصحيح التسمية هنا
+            jwtToken,
             email,
             name: user.name
         });
     } catch (err) {
-        console.error(err); // تسجيل الخطأ
+        console.error(err);
         res.status(500).json({
             message: "Internal server error",
             success: false
