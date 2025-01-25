@@ -1,4 +1,4 @@
-const bcrypt = require('bcrypt'); // تصحيح الاسم
+const bcrypt = require('bcrypt'); 
 const jwt = require('jsonwebtoken');
 const UserModel = require("../Models/User");
 
@@ -6,7 +6,7 @@ const signup = async (req, res) => {
     try {
         const { name, email, password } = req.body;
 
-        // تحقق ما إذا كان المستخدم موجودًا بالفعل
+        "check if user exist"
         const user = await UserModel.findOne({ email });
         if (user) {
             return res.status(409).json({
@@ -15,7 +15,7 @@ const signup = async (req, res) => {
             });
         }
 
-        // إنشاء مستخدم جديد
+        // create new user
         const hashedPassword = await bcrypt.hash(password, 10);
         const userModel = new UserModel({ name, email, password: hashedPassword });
         await userModel.save();
@@ -25,7 +25,7 @@ const signup = async (req, res) => {
             success: true
         });
     } catch (err) {
-        console.error(err); // تسجيل الخطأ
+        console.error(err);
         res.status(500).json({
             message: "Internal server error",
             success: false
@@ -38,7 +38,7 @@ const login = async (req, res) => {
         const { email, password } = req.body;
         const errorMsg = "Authentication failed. Email or password is wrong.";
 
-        // تحقق ما إذا كان المستخدم موجودًا بالفعل
+        "check if users exist"
         const user = await UserModel.findOne({ email });
         if (!user) {
             return res.status(403).json({

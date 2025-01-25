@@ -1,6 +1,10 @@
 const mongoose = require("mongoose")
 
+// Use Mongoose's Schema constructor to define the structure of the 'users' collection
+
 const Schema = mongoose.Schema;
+
+// Define the UserSchema to specify the fields and their validation requirements
 
 const UserSchema = ({
     name: {

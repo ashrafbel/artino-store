@@ -1,6 +1,6 @@
 const Joi = require('joi');
 
-// التحقق من التسجيل
+// Check registration
 const signupValidation = (req, res, next) => {
     const schema = Joi.object({
         name: Joi.string().min(3).max(100).required(),
@@ -12,13 +12,13 @@ const signupValidation = (req, res, next) => {
     if (error) {
         return res.status(400).json({
             message: 'Bad request',
-            error: error.details[0].message // رسالة أوضح
+            error: error.details[0].message 
         });
     }
     next();
 };
 
-// التحقق من تسجيل الدخول
+// Verify login
 const loginValidation = (req, res, next) => {
     const schema = Joi.object({
         email: Joi.string().email().required(),
@@ -29,7 +29,7 @@ const loginValidation = (req, res, next) => {
     if (error) {
         return res.status(400).json({
             message: 'Bad request',
-            error: error.details[0].message // رسالة أوضح
+            error: error.details[0].message 
         });
     }
     next();
