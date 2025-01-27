@@ -4,6 +4,8 @@ import Header from "../Header/Header";
 import { GiDeliveryDrone } from "react-icons/gi";
 import { MdSupportAgent } from "react-icons/md";
 import { MdChangeCircle } from "react-icons/md";
+
+// Define the About component
 const About = () =>{
     return(
         <div>
