@@ -9,6 +9,7 @@ const Productpage = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
+    // Fetch product data when the component mounts or when 'id' changes
     useEffect(() => {
         fetch('/allproducts.json')
             .then(response => {
@@ -19,6 +20,7 @@ const Productpage = () => {
             })
             .then(data => {
                 console.log('Fetched data:', data);
+                // Find the product that matches the id from the route parameters
                 const selectedProduct = data.find(product => {
                     console.log('Checking product id:', product.id);
                     return product.id === parseInt(id);
