@@ -11,11 +11,13 @@ import './Allproducts.css';
 
 const AllProducts = () => {
   const navigate = useNavigate();
+// Function to navigate to the product details page
   const handleProductpage = (id) => {
     navigate(`/productpage/${id}`);
   };
   const [products, setProducts] = useState([]);
 
+// Fetch products from the API when the component mounts
   useEffect(() => {
     fetch('http://localhost:8080/api/products')
       .then(response => response.json())
