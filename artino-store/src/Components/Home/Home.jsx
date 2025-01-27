@@ -8,13 +8,19 @@ import { FaTiktok } from "react-icons/fa";
 // import Login from "../Login/Login";
 import { useNavigate } from "react-router-dom";
 const Home = () =>{
-    const navigate = useNavigate();
+    const navigate = useNavigate(); // Initialize the navigate function to handle route changes
+    
+    // Function to navigate to the "getstarted" page
     const handleGetStarted = () => {
         navigate("/getstarted");
     };
+    
+    // Function to navigate to the "viewoffers" page
     const handleViewoffers = () => {
         navigate("/viewoffers");
     };
+    
+    // Function to navigate to the "login" page
     const handleLogin = () => {
         navigate("/login");
     };
