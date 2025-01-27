@@ -11,10 +11,11 @@ const Getstarted = () => {
     const navigate = useNavigate();
     
 
+    // Function to handle form submission
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-
+        // Send a POST request to the signup API endpoint
         const response = await fetch("http://localhost:8080/auth/signup", {
             method: "POST",
             headers: {
@@ -27,12 +28,13 @@ const Getstarted = () => {
             }),
         });
 
-        const data = await response.json();
+        const data = await response.json(); // Parse the JSON response
         if (response.status === 201) {
             setMessage("Registration successful! Welcome to Artino!");
             navigate("/");
 
         } else {
+            // Display the error message from the server or a default message
             setMessage(data.message || "Registration failed. Please try again.");
         }
     };
