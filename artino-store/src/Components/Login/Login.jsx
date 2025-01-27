@@ -8,9 +8,11 @@ const Login = () => {
     const [message, setMessage] = useState("");
     const navigate = useNavigate();
 
+    // Function to handle form submission (login process)
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        // Send a POST request to the login API endpoint
         const response = await fetch("http://localhost:8080/auth/login", {
             method: "POST",
             headers: {
